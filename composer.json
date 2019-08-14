@@ -1,0 +1,29 @@
+{
+    "name": "antonyan/kafka-light",
+    "description": "Service for PHP and Kafka interaction",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem Antonenko",
+            "email": "antonenko.artem@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-rdkafka": "^3.0.3"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Infrastructure\\": "/"
+        },
+        "classmap": [
+            "./"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": { "Infrastructure\\Tests\\": "tests/" }
+    },
+    "minimum-stability": "stable"
+}
